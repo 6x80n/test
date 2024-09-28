@@ -8,7 +8,7 @@ cat <<EOL > .devcontainer/devcontainer.json
             "version": "latest"
         }
     },
-    "postStartCommand": "python3 /workspaces/new/m.py",
+    "postStartCommand": "python3 /workspaces/test/m.py",
     "customizations": {
         "vscode": {
             "settings": {
